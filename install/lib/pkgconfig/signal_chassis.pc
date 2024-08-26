@@ -1,4 +1,4 @@
-prefix=/home/glxrobot/catkin/install
+prefix=/home/gerunze/carkin/install
 
 Name: signal_chassis
 Description: Description of signal_chassis
