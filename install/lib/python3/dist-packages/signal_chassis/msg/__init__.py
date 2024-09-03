@@ -1,3 +1,4 @@
+from ._ControlCommand import *
 from ._Drivetrain import *
 from ._DrivetrainStamped import *
 from ._DrivetrainStamped_r1 import *

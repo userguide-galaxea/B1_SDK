@@ -1,6 +1,8 @@
 (cl:defpackage signal_chassis-msg
   (:use )
   (:export
+   "<CONTROLCOMMAND>"
+   "CONTROLCOMMAND"
    "<DRIVETRAIN>"
    "DRIVETRAIN"
    "<DRIVETRAINSTAMPED>"
