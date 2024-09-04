@@ -18,10 +18,10 @@ The SDK does not require recompilation. Please refer to the contents below.
 Use the following command to check the current kernel version:
 
 ```Plain
-name -r
+uname -r
 ```
 
-The driver file name usually includes the version information. If you need drivers for other kernel versions, please contact us for assistance.
+The driver file name usually includes the version information. **If you need drivers for other kernel versions, please contact us for assistance**.
 
 <table style="border-collapse: collapse; width: 100%;">
     <thead>
@@ -44,7 +44,7 @@ The driver file name usually includes the version information. If you need drive
 
 
 
-Use the following command to load the kernel module:
+The driver files locate in path `B1_SDK/driver`,please use the following command to load the kernel module:
 
 ```Bash
 sudo insmod /usr/lib/modules/$(uname -r)/kernel/drivers/net/can/dev/can-dev.ko
@@ -100,7 +100,7 @@ candump can0
 
 ```shell
 source install/setup.bash
-roslaunch signal_chassis r1.launch   
+roslaunch signal_chassis b1.launch   
 ```
 
 #### Control the Chassis
