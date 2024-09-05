@@ -1,4 +1,4 @@
-prefix=/home/jiaruiqian/work/wjy/install
+prefix=/home/jiaruiqian/work/ci_pipeline/workspace/install
 
 Name: signal_chassis
 Description: Description of signal_chassis

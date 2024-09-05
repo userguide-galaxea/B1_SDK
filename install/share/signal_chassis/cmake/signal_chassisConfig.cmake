@@ -67,14 +67,14 @@ set(signal_chassis_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(signal_chassis_SOURCE_PREFIX /home/jiaruiqian/work/wjy/src/signal_chassis)
-  set(signal_chassis_DEVEL_PREFIX /home/jiaruiqian/work/wjy/devel/.private/signal_chassis)
+  set(signal_chassis_SOURCE_PREFIX /home/jiaruiqian/work/ci_pipeline/workspace/src/signal_chassis)
+  set(signal_chassis_DEVEL_PREFIX /home/jiaruiqian/work/ci_pipeline/workspace/devel/.private/signal_chassis)
   set(signal_chassis_INSTALL_PREFIX "")
   set(signal_chassis_PREFIX ${signal_chassis_DEVEL_PREFIX})
 else()
   set(signal_chassis_SOURCE_PREFIX "")
   set(signal_chassis_DEVEL_PREFIX "")
-  set(signal_chassis_INSTALL_PREFIX /home/jiaruiqian/work/wjy/install)
+  set(signal_chassis_INSTALL_PREFIX /home/jiaruiqian/work/ci_pipeline/workspace/install)
   set(signal_chassis_PREFIX ${signal_chassis_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jiaruiqian/work/wjy/install/lib;/home/jiaruiqian/work/wjy/install/lib;/home/jiaruiqian/work/wjy/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/jiaruiqian/work/ci_pipeline/workspace/install/lib;/home/jiaruiqian/work/ci_pipeline/workspace/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

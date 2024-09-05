@@ -1,4 +1,4 @@
-prefix=/home/jiaruiqian/work/wjy/install
+prefix=/home/jiaruiqian/work/ci_pipeline/workspace/install
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild
